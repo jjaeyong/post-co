@@ -14,6 +14,7 @@ api_key = os.environ['KOPIS_OPENAPI_KEY']
 ### OPEN API 포스터 링크 다운
 
 # 해당 API 데이터가 json이 아닌 XML로 이루어져있기 때문에 XML을 파싱해서 추출한다.
+# 데이터 프레임화 하여 분석에 용이
 def read_xml(url):
     # URL에서 XML 데이터를 가져오기
     response = requests.get(url)
